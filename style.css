@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Poppins', sans-serif;
+	color: white;
+	box-sizing: border-box;
+}
+#background{
+	background: linear-gradient(90deg,rgb(77,175,84),rgb(61,136,128));
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	position: relative;
+}
+.card{
+	height: 400px;
+	width: 320px;
+	background-color: rgb(39,45,64);
+	margin: auto;
+	border-radius: 20px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+.card_head{
+	height: 50px;
+	width: 100%;
+}
+.card_content{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.like, .cart{
+	cursor: pointer;
+	font-size: 25px;
+	z-index: 2;
+	position: absolute;
+	top:10px;
+	left:20px;
+}
+.cart{
+	left:unset;
+	right:20px;
+}
+
+.image{
+	max-width: 250px;
+	max-height: 300px;
+	position: relative;
+	margin: 10px auto 0px 15px;
+	transition: 0.7s;
+}
+.title{
+	color: rgb(77,175,84);
+	margin: 0px auto ;
+	transition: 0.7s;
+}
+.price{
+	margin: 0px auto ;
+	transition: 0.7s;
+}
+.card:hover .image{
+	transform: translateY(-90px) rotate(-30deg);
+}
+.card:hover .title{
+	transform: translate(-45px,-80px);
+}
+.card:hover .price{
+	transform: translate(-110px,-80px);
+}
+.card_size{
+	display: flex;
+	flex-direction: row;
+}
+.card_size span{
+	font-size: 18px;
+	padding:0px 10px;
+	background-color: white;
+	color:black;
+	margin:0px 6px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+.card_color{
+	margin-top: 20px;
+	display: flex;
+	flex-direction: row;
+}
+.card_color span{
+	width: 25px;
+	height: 25px;
+	background-color: white;
+	color:black;
+	margin:0px 6px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.card_action{
+	margin-top: 20px;
+	display: flex;
+	flex-direction: row;
+}
+.card_action button{
+	width: 95px;
+	height: 37px;
+	background-color: rgb(77,175,84);
+	border-radius: 5px;
+	border: 0px;
+	margin: 0px 10px;
+	cursor: pointer;
+}
+.card_detail{
+	position: absolute;
+	bottom: -125px;
+	left:18px;
+	opacity: 0; 
+	transition: 0.7s;
+}
+.card:hover .card_detail{
+	transform: translateY(-140px);
+	opacity: 1;
+}

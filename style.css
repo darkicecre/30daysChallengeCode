@@ -112,6 +112,7 @@
 	border: 0px;
 	margin: 0px 10px;
 	cursor: pointer;
+	transition: 0.5s;
 }
 .card_detail{
 	position: absolute;
@@ -123,4 +124,8 @@
 .card:hover .card_detail{
 	transform: translateY(-140px);
 	opacity: 1;
+}
+
+.card_action button:hover{
+	transform: scale(0.9);
 }

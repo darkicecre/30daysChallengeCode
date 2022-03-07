@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+    z-index: 1;
+}
+
+body{
+    background-image: linear-gradient( 45deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 50%, rgb(255, 204, 112) 100% );
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+}
+
+.open__modal{
+    margin: auto;
+    padding: 20px 40px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 8px #aba4a4;
+    background-color: #fff;
+    transition: 0.25s;
+}
+.open__modal:hover{
+    background-color: #ddd;
+}
+.modal{
+    background: rgb(0,0,0,.5);
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
+    position: fixed;
+}
+
+.modal_content{
+    width: 450px;
+    z-index: 3;
+    top:50%;
+    transition: 1s;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: fixed;
+}
+@keyframes openContent{
+    from {top:20%; opacity: 0;}
+    to {top:50%;opacity: 1;}
+}
+.modal_header{
+    background-color: rgb(226,110,112);
+    padding: 15px;
+    font-size: 17px;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.modal_header span{
+    cursor: pointer;
+}
+.modal_body{
+    background-color: white;
+    padding: 15px;
+}
+.modal_body h2{
+    color:rgb(226,110,112);
+}
+.modal_action{
+    background-color: white;
+    padding: 15px;
+    display: flex;
+}
+.modal_action button{
+    background-color: rgb(226,110,112);
+    outline: none;
+    border: none;
+    margin: 0px 0px 0px auto;
+    padding: 7px 20px;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}

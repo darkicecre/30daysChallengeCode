@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Modal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <button class="open__modal" onclick="openModal()">Open Modal</button>
+    <div id="modal_background" class="modal" style="display: none;" onclick="closeModal()"></div>
+    <div id="modal_content_id" class="modal_content" style="display: none;">
+        <div class="modal_header">
+            <p>Welcome to Nodemy</p>
+            <span onclick="closeModal()">✖</span>
+        </div>
+        <div class="modal_body">
+            <h2>Modal</h2>
+            <p>Đây là phần body của Modal</p>
+        </div>
+        <div class="modal_action">
+            <button onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+</body>
+</html>

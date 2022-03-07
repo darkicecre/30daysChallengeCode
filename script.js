@@ -1,18 +1,38 @@
-var imgSource = [
-    "Image/img1.jpeg",
-    "Image/img2.jpeg",
-    "Image/img3.jpeg",
-    "Image/img4.jpeg",
-    "Image/img5.jpeg",
-    "Image/img6.jpeg",
-    "Image/img7.jpeg",
-    "Image/img8.jpeg",
-    "Image/1.jpg",
-    "Image/2.jpg",
-    "Image/3.jpg",
-    "Image/4.jpg",
-    "Image/5.jpg",
-    "Image/6.jpg"
+// var imgSource = [
+//     "Image/img1.jpeg",
+//     "Image/img2.jpeg",
+//     "Image/img3.jpeg",
+//     "Image/img4.jpeg",
+//     "Image/img5.jpeg",
+//     "Image/img6.jpeg",
+//     "Image/img7.jpeg",
+//     "Image/img8.jpeg",
+//     "Image/1.jpg",
+//     "Image/2.jpg",
+//     "Image/3.jpg",
+//     "Image/4.jpg",
+//     "Image/5.jpg",
+//     "Image/6.jpg"
+// ]
+var imgSource=[
+    "ImageFamily/1.jpg",
+    "ImageFamily/2.jpg",
+    "ImageFamily/3.jpg",
+    "ImageFamily/4.jpg",
+    "ImageFamily/5.jpg",
+    "ImageFamily/6.jpg",
+    "ImageFamily/7.jpg",
+    "ImageFamily/8.jpg",
+    "ImageFamily/9.jpg",
+    "ImageFamily/10.jpg",
+    "ImageFamily/11.jpg",
+    "ImageFamily/12.jpg",
+    "ImageFamily/13.jpg",
+    "ImageFamily/14.jpg",
+    "ImageFamily/15.jpg",
+    "ImageFamily/16.jpg",
+    "ImageFamily/19.png",
+    "ImageFamily/20.png",
 ]
 window.onload = () => {
     for (var i = 0; i < imgSource.length; i++) {

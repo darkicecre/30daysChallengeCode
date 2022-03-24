@@ -1,9 +1,22 @@
-document.addEventListener('keydown',e=>{
-    document.getElementById('result').classList.remove('hide');
-    document.getElementById('input').classList.add('hide');
-    document.getElementById('eKeyCode').innerHTML=e.keyCode;
-    document.getElementById('eKey').innerHTML=e.key;
-    document.getElementById('eLocation').innerHTML=e.location;
-    document.getElementById('eWhich').innerHTML=e.which;
-    document.getElementById('eCode').innerHTML=e.code;
+var content = document.getElementById("contentId");
+var input = document.getElementById("inputText");
+function removeTag(event){
+    console.log(content);
+    content.removeChild(event.parentElement);
+}
+input.addEventListener('keydown',e=>{
+    if(e.key==='Enter'){
+        let content = document.getElementById("contentId");
+        const para = document.createElement("div");
+        para.classList.add('item');
+        para.innerHTML='<p>'+input.value+'</p><button class="remove-tag" onclick="removeTag(this)"><i class="fa-solid fa-xmark"></i></button>';
+        content.insertBefore(para,input);
+        input.value='';
+    }
 })
+function removeAll(){
+    if(content.childElementCount>1){
+        content.removeChild(content.firstChild);
+        removeAll();
+    }
+}

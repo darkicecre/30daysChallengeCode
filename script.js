@@ -1,0 +1,9 @@
+document.addEventListener('keydown',e=>{
+    document.getElementById('result').classList.remove('hide');
+    document.getElementById('input').classList.add('hide');
+    document.getElementById('eKeyCode').innerHTML=e.keyCode;
+    document.getElementById('eKey').innerHTML=e.key;
+    document.getElementById('eLocation').innerHTML=e.location;
+    document.getElementById('eWhich').innerHTML=e.which;
+    document.getElementById('eCode').innerHTML=e.code;
+})
